@@ -129,8 +129,25 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  width: 100%;
+  margin: 0, auto;
+  padding: 0;
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
 }
+/************GENERAL STYLES HERE************/
+/************HEADER STYLES HERE************/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+}
+/************INTRO STYLES HERE************/
+/************ABOUT STYLES HERE************/
+/************SKILLS STYLES HERE************/
+/************WORK HISTORY STYLES HERE********/
+/************FOOTER STYLES HERE**************/
