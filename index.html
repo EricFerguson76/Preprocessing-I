@@ -1,19 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
 
-  <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </nav>
+    <img src="/computer.jpg" alt="guy on computer" />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <div class="info">
+      <h1>Eric Ferguson - Web Developer</h1>
+      <p>
+        I enjoy working with technology. I also like working with and learning
+        new coding languages.
+      </p>
+    </div>
+  </header>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <section id="main-content">
+      <!-----------ABOUT SECTION-------------->
+      <div class="about">
+        <h1>A Little About Me:</h1>
+        <p>
+          I live in Pekin Illinois with my wife and three kids. I graduated
+          college in 1998 with a Bachelors in Criminal Justice. In September of
+          2019 I completed a Full Stack Web Development Course with Lambda
+          School. Over the years my past work experiences has brought me across
+          the paths of many types of people. They have all influenced me in
+          different ways to become the person I am today. They have helped me
+          sharpen my listening skills and have taught me patience when working
+          with difficult people.
+        </p>
+      </div>
+
+      <!----------SKILLS SECTION--------------->
+      <div class="skills">
+        <h2>Skills I Have:</h2>
+        <ul>
+          <li>Critical Thinker</li>
+          <br />
+          <li>Problem Solver</li>
+          <br />
+          <li>Hard Worker</li>
+          <br />
+          <li>Fast Learner</li>
+          <br />
+        </ul>
+      </div>
+    </section>
+
+    <!--------WORK HISTORY SECTION---------------->
+
+    <section id="work">
+      <h2>Work History:</h2>
+      <div>
+        <p>
+          I worked at IBM for 3 years as a Software Engineer. The languages that
+          I used was Swift.
+        </p>
+        <br />
+      </div>
+      <div>
+        <p>
+          I worked at Microsoft for 5 years as a Computer Scientist. While I was
+          there, the language I used was .Net.
+        </p>
+        <br />
+      </div>
+      <div>
+        <p>
+          I worked at Amazon for a year in Dev Ops. The language I used was
+          AWS.<br />
+        </p>
+      </div>
+    </section>
+    <!------------FOOTER SECTION-------------------->
+    <footer id="contact">
+      <address>
+        <h3>Contact Me:</h3>
+
+        <h4>Address:</h4>
+        <p>123 Main Street</p>
+        <p>Anywhere, Usa 14511</p>
+        <br />
+
+        <h4>Phone Number:</h4>
+        <p>309-555-1212</p>
+        <br />
+
+        <p>Email: Jonnycomelately@gdog.com</p>
+      </address>
+      <p>&copy Eric Ferguson 2019</p>
+    </footer>
+  </body>
 </html>

@@ -4,56 +4,325 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0, auto;
+  padding: 0;
+  font-size: 62.5%;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
+/************GENERAL STYLES HERE************/
+
+html {
+  font-size: 62.5%;
+}
+
+@font: 2rem;
+
+@width: 100%;
+
+.flexbox() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header1() {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+/************HEADER STYLES HERE************/
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: @font;
+  background-color: #4682b4;
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  img {
+    width: 25%;
+    padding-top: 45px;
+  }
+
+  //img closing tag
+}
+
+//header closing tag
+
+.info {
+  .flexbox();
+  width: @width;
+  padding-top: 25px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 5rem;
+    width: 55%;
+
+    p {
+      padding: 30px;
+      font-size: 3rem;
+    }
+
+    //p closing tag
+  }
+}
+
+//.info closing tag
+
+#main-content {
+  .flexbox();
+  flex-direction: row;
+  font-size: @font;
+  width: @width;
+  background: #f5deb3;
+  padding: 20px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.about {
+  width: 49%;
+  font-size: @font;
+
+  h1 {
+    .header1();
+  }
+
+  //h1 closing tag
+
+  p {
+    flex-wrap: wrap;
+    width: 84%;
+  }
+
+  //p closing tag
+}
+
+//.about closing tag
+
+.skills {
+  .flexbox();
+  width: 49%;
+  font-size: @font;
+  margin-right: 20px;
+
+  h2 {
+    font-size: 3rem;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
+
+//.skils closing tag
+
+/************WORK HISTORY STYLES HERE********/
+
+#work {
+  width: 100%;
+  font-size: 2rem;
+  padding: 29px;
+  padding-top: 15px;
+  background: #d2b48c;
+
+  h2 {
+    font-size: 3rem;
+    padding: 35px;
+    padding-left: 3px;
+
+    p {
+      width: 30%;
+      display: flex;
+      text-wrap: wrap;
+      padding: 2px;
+    }
+
+    //p closing tag
+  }
+
+  //h2 closing tag
+}
+
+//#work closing tag
+
+/************FOOTER STYLES HERE**************/
+#contact {
+  .flexbox();
+  font-size: @font;
+  width: @width;
+  background: #a9a9a9;
+
+  address {
+    padding: 20px;
+
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 25px;
+    }
+
+    //h3 closing tag
+  }
+
+  //address closing tsg
+}
+
+//#contact closing tag
