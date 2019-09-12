@@ -151,11 +151,10 @@ header {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
-  background-color: #4682B4;
+  background-color: #4682b4;
 }
 header a {
   text-decoration: none;
-  justify-content: space-evenly;
   color: black;
 }
 header img {
@@ -174,23 +173,22 @@ header img {
   font-size: 5rem;
   width: 55%;
 }
-.info p {
-  padding: 20px;
+.info h1 p {
+  padding: 30px;
   font-size: 3rem;
-  width: 65%;
 }
 #main-content {
-  display: flex;
-  font-size: 2rem;
-  width: 100%;
-  background: #F5DEB3;
-  padding: 20px;
-}
-.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+  width: 100%;
+  background: #f5deb3;
+  padding: 20px;
+}
+.about {
   width: 49%;
   font-size: 2rem;
 }
@@ -201,28 +199,23 @@ header img {
   padding-top: 25px;
   padding-bottom: 15px;
 }
-.about p {
+.about h1 p {
   flex-wrap: wrap;
   width: 84%;
 }
 .skills {
-  width: 49%;
-  font-size: 2rem;
-}
-.skills h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 49%;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+.skills h2 {
   font-size: 3rem;
   padding-top: 25px;
   padding-bottom: 15px;
-}
-.skills ul li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 /************WORK HISTORY STYLES HERE********/
 #work {
@@ -230,14 +223,14 @@ header img {
   font-size: 2rem;
   padding: 29px;
   padding-top: 15px;
-  background: #D2B48C;
+  background: #d2b48c;
 }
 #work h2 {
   font-size: 3rem;
   padding: 35px;
   padding-left: 3px;
 }
-#work p {
+#work h2 p {
   width: 30%;
   display: flex;
   text-wrap: wrap;
@@ -251,12 +244,12 @@ header img {
   align-items: center;
   font-size: 2rem;
   width: 100%;
-  background: #A9A9A9;
+  background: #a9a9a9;
 }
 #contact address {
   padding: 20px;
 }
-#contact h3 {
+#contact address h3 {
   font-size: 3rem;
   padding-bottom: 25px;
 }
