@@ -166,8 +166,12 @@ html {
   align-items: center;
 }
 
-@media (max-width: 500px) {
-  width: 100%;
+.header1() {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 /************HEADER STYLES HERE************/
@@ -179,6 +183,11 @@ header {
   font-size: @font;
   background-color: #4682b4;
 
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   a {
     text-decoration: none;
     color: black;
@@ -187,13 +196,21 @@ header {
   img {
     width: 25%;
     padding-top: 45px;
-  } //img closing tag
-} //header closing tag
+  }
+
+  //img closing tag
+}
+
+//header closing tag
 
 .info {
   .flexbox();
   width: @width;
   padding-top: 25px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 
   h1 {
     font-size: 5rem;
@@ -202,9 +219,13 @@ header {
     p {
       padding: 30px;
       font-size: 3rem;
-    } //p closing tag
-  } // h1 closing tag
-} //.info closing tag
+    }
+
+    //p closing tag
+  }
+}
+
+//.info closing tag
 
 #main-content {
   .flexbox();
@@ -213,6 +234,10 @@ header {
   width: @width;
   background: #f5deb3;
   padding: 20px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .about {
@@ -220,18 +245,20 @@ header {
   font-size: @font;
 
   h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    padding-top: 25px;
-    padding-bottom: 15px;
+    .header1();
+  }
 
-    p {
-      flex-wrap: wrap;
-      width: 84%;
-    } //p closing tag
-  } //h1 closing tag
-} //.about closing tag
+  //h1 closing tag
+
+  p {
+    flex-wrap: wrap;
+    width: 84%;
+  }
+
+  //p closing tag
+}
+
+//.about closing tag
 
 .skills {
   .flexbox();
@@ -243,8 +270,10 @@ header {
     font-size: 3rem;
     padding-top: 25px;
     padding-bottom: 15px;
-  } //h2 closing tag
-} //.skils closing tag
+  }
+}
+
+//.skils closing tag
 
 /************WORK HISTORY STYLES HERE********/
 
@@ -265,9 +294,15 @@ header {
       display: flex;
       text-wrap: wrap;
       padding: 2px;
-    } //p closing tag
-  } //h2 closing tag
-} //#work closing tag
+    }
+
+    //p closing tag
+  }
+
+  //h2 closing tag
+}
+
+//#work closing tag
 
 /************FOOTER STYLES HERE**************/
 #contact {
@@ -282,6 +317,12 @@ header {
     h3 {
       font-size: 3rem;
       padding-bottom: 25px;
-    } //h3 closing tag
-  } //address closing tsg
-} //#contact closing tag
+    }
+
+    //h3 closing tag
+  }
+
+  //address closing tsg
+}
+
+//#contact closing tag
