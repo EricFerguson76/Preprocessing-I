@@ -133,7 +133,6 @@ table {
   margin: 0, auto;
   padding: 0;
   font-size: 62.5%;
-  border: 1px solid blue;
 }
 html,
 body {
@@ -143,18 +142,21 @@ body {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 500px) {
+  width: 100%;
+}
 /************HEADER STYLES HERE************/
 header {
-  width: 90%;
+  width: 100%;
   display: flex;
-  border: 2px solid red;
   flex-direction: column;
   font-size: 2rem;
-  background-color: #b3c6ff;
+  background-color: #4682B4;
 }
-header nav {
-  width: 60%;
+header a {
   text-decoration: none;
+  justify-content: space-evenly;
+  color: black;
 }
 header img {
   width: 25%;
@@ -163,13 +165,98 @@ header img {
 .info {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 25px;
 }
 .info h1 {
   font-size: 5rem;
+  width: 55%;
 }
-/************ABOUT STYLES HERE************/
-/************SKILLS STYLES HERE************/
+.info p {
+  padding: 20px;
+  font-size: 3rem;
+  width: 65%;
+}
+#main-content {
+  display: flex;
+  font-size: 2rem;
+  width: 100%;
+  background: #F5DEB3;
+  padding: 20px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  font-size: 2rem;
+}
+.about h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.about p {
+  flex-wrap: wrap;
+  width: 84%;
+}
+.skills {
+  width: 49%;
+  font-size: 2rem;
+}
+.skills h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.skills ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /************WORK HISTORY STYLES HERE********/
+#work {
+  width: 100%;
+  font-size: 2rem;
+  padding: 29px;
+  padding-top: 15px;
+  background: #D2B48C;
+}
+#work h2 {
+  font-size: 3rem;
+  padding: 35px;
+  padding-left: 3px;
+}
+#work p {
+  width: 30%;
+  display: flex;
+  text-wrap: wrap;
+  padding: 2px;
+}
 /************FOOTER STYLES HERE**************/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  background: #A9A9A9;
+}
+#contact address {
+  padding: 20px;
+}
+#contact h3 {
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
